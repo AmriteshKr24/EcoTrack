@@ -8,8 +8,8 @@ EcoTrack is a web application designed to help users calculate and track their c
 EcoTrack/<br>
 ├── public/<br>
 │   ├── css/<br>
-│   │   ├── main.css<br>
-│   │   └── tailwind.css<br>
+│   │   ├── input.css<br>
+│   │   └── output.css<br>
 │   ├── js/<br>
 │   │   ├── main.js<br>
 │   │   ├── auth.js<br>
