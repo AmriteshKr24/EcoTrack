@@ -1,11 +1,11 @@
-# EcoTrack - Footprint Calculator
+# EcoTrack -
 
 ## Overview
 EcoTrack is a web application designed to help users calculate and track their carbon footprint. The application allows users to sign up, log in, and maintain their profile while calculating their environmental impact through various activities.
 
 ## Project Structure
 
-footprint-calculator/<br>
+EcoTrack/<br>
 ├── public/<br>
 │   ├── css/<br>
 │   │   ├── main.css<br>
