@@ -23,12 +23,12 @@ app.set('view engine', 'ejs');
 app.engine('ejs', ejsMate);
 app.use(methodOverride("_method"));
 
-app.use(express.static(path.join(__dirname, 'public/css')));
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({
     extended: true
 }))
 
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.render('pages/home');
 });
 
