@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 const ejs = require('ejs');
+const path = require('path');
 
 // Connect to MongoDB
 
@@ -18,18 +19,18 @@ mongoose.connect('mongodb://127.0.0.1:27017/EcoTrackDB')
     });
 
 
+const app = express();
 app.set("views", path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
-app.use(method("_method"));
+app.use(methodOverride("_method"));
 app.use(express.urlencoded({
     extended: true
 }))
 
-const app = express();
 
 app.get('/', (req, res) => {
-    res.render('index');
+    res.render('pages/home');
 });
 
 
