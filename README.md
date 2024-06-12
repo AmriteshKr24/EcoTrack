@@ -5,43 +5,43 @@ EcoTrack is a web application designed to help users calculate and track their c
 
 ## Project Structure
 
-footprint-calculator/
-├── public/
-│   ├── css/
-│   │   ├── main.css
-│   │   └── tailwind.css
-│   ├── js/
-│   │   ├── main.js
-│   │   ├── auth.js
-│   │   └── profile.js
-│   ├── images/
-│   │   └── logo.png
-│   └── index.html
-├── src/
-│   ├── controllers/
-│   │   ├── authController.js
-│   │   ├── footprintController.js
-│   │   └── userController.js
-│   ├── models/
-│   │   ├── User.js
-│   │   ├── Footprint.js
-│   └── routes/
-│       ├── authRoutes.js
-│       ├── footprintRoutes.js
-│       └── userRoutes.js
-├── views/
-│   ├── partials/
-│   │   ├── header.ejs
-│   │   ├── footer.ejs
-│   └── pages/
-│       ├── home.ejs
-│       ├── profile.ejs
-│       ├── leaderboard.ejs
-│       └── login.ejs
-│       └── signup.ejs
-├── .env
-├── .gitignore
-├── package.json
-├── package-lock.json
-├── app.js
-└── tailwind.config.js
+footprint-calculator/<br>
+├── public/<br>
+│   ├── css/<br>
+│   │   ├── main.css<br>
+│   │   └── tailwind.css<br>
+│   ├── js/<br>
+│   │   ├── main.js<br>
+│   │   ├── auth.js<br>
+│   │   └── profile.js<br>
+│   ├── images/<br>
+│   │   └── logo.png<br>
+│   └── index.html<br>
+├── src/<br>
+│   ├── controllers/<br>
+│   │   ├── authController.js<br>
+│   │   ├── footprintController.js<br>
+│   │   └── userController.js<br>
+│   ├── models/<br>
+│   │   ├── User.js<br>
+│   │   ├── Footprint.js<br>
+│   └── routes/<br>
+│       ├── authRoutes.js<br>
+│       ├── footprintRoutes.js<br>
+│       └── userRoutes.js<br>
+├── views/<br>
+│   ├── partials/<br>
+│   │   ├── header.ejs<br>
+│   │   ├── footer.ejs<br>
+│   └── pages/<br>
+│       ├── home.ejs<br>
+│       ├── profile.ejs<br>
+│       ├── leaderboard.ejs<br>
+│       └── login.ejs<br>
+│       └── signup.ejs<br>
+├── .env<br>
+├── .gitignore<br>
+├── package.json<br>
+├── package-lock.json<br>
+├── app.js<br>
+└── tailwind.config.js<br>
