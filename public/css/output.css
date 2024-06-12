@@ -579,6 +579,23 @@ video {
   background-color: rgb(9 16 12 / var(--tw-bg-opacity));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#\] {
+  background-color: #;
+}
+
+.bg-\[\#152B1E\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 43 30 / var(--tw-bg-opacity));
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
 .font-indie {
   font-family: Indie Flower, cursive, sans-serif;
 }
@@ -605,4 +622,29 @@ video {
 .text-blue-900 {
   --tw-text-opacity: 1;
   color: rgb(30 58 138 / var(--tw-text-opacity));
+}
+
+@font-face {
+  font-family: 'Julius Sans One';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url(../font/julius.woff2) format('woff2');
+}
+
+.hover\:bg-\[\]:hover {
+  background-color: ;
+}
+
+.hover\:bg-\[\#\]:hover {
+  background-color: #;
+}
+
+.hover\:bg-\[\#152B1E\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 43 30 / var(--tw-bg-opacity));
 }

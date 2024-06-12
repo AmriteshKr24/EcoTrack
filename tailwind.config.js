@@ -4,7 +4,7 @@ module.exports = {
     extend: {
       fontFamily:{
         indie: ["Indie Flower","cursive","sans-serif"],
-        julius: ["Julius Sans One","sans-serif"]
+        julius: ["Julius Sans One","sans-serif"],
       }
     },
   },
