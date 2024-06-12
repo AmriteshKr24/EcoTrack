@@ -13,6 +13,7 @@ EcoTrack/<br>
 │   ├── js/<br>
 │   │   ├── main.js<br>
 │   │   ├── auth.js<br>
+│   │   ├── tasks.js<br>
 │   │   └── profile.js<br>
 │   ├── images/<br>
 │   │   └── logo.png<br>
@@ -20,14 +21,14 @@ EcoTrack/<br>
 ├── src/<br>
 │   ├── controllers/<br>
 │   │   ├── authController.js<br>
-│   │   ├── footprintController.js<br>
+│   │   ├── taskController.js<br>
 │   │   └── userController.js<br>
 │   ├── models/<br>
 │   │   ├── User.js<br>
-│   │   ├── Footprint.js<br>
+│   │   ├── Task.js<br>
 │   └── routes/<br>
 │       ├── authRoutes.js<br>
-│       ├── footprintRoutes.js<br>
+│       ├── taskRoutes.js<br>
 │       └── userRoutes.js<br>
 ├── views/<br>
 │   ├── partials/<br>
@@ -37,7 +38,7 @@ EcoTrack/<br>
 │       ├── home.ejs<br>
 │       ├── profile.ejs<br>
 │       ├── leaderboard.ejs<br>
-│       └── login.ejs<br>
+│       ├── login.ejs<br>
 │       └── signup.ejs<br>
 ├── .env<br>
 ├── .gitignore<br>
@@ -45,3 +46,4 @@ EcoTrack/<br>
 ├── package-lock.json<br>
 ├── app.js<br>
 └── tailwind.config.js<br>
+
