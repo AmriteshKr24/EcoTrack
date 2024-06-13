@@ -558,9 +558,21 @@ video {
   position: fixed;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mt-16 {
+  margin-top: 4rem;
 }
 
 .mt-4 {
@@ -633,10 +645,6 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.rounded {
-  border-radius: 0.25rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
 }
@@ -673,18 +681,23 @@ video {
   background-color: rgb(21 43 30 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#53c484\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(83 196 132 / var(--tw-bg-opacity));
+}
+
 .p-6 {
   padding: 1.5rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-6 {
@@ -698,6 +711,10 @@ video {
 
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pt-\[76px\] {
+  padding-top: 76px;
 }
 
 .text-center {
@@ -732,6 +749,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[\#152b1e\] {
+  --tw-text-opacity: 1;
+  color: rgb(21 43 30 / var(--tw-text-opacity));
+}
+
 .text-\[\#75E69C\] {
   --tw-text-opacity: 1;
   color: rgb(117 230 156 / var(--tw-text-opacity));
@@ -752,9 +774,9 @@ video {
   color: rgb(34 197 94 / var(--tw-text-opacity));
 }
 
-.text-white {
+.text-teal-200 {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(153 246 228 / var(--tw-text-opacity));
 }
 
 @font-face {
@@ -782,6 +804,11 @@ video {
   border-color: rgb(21 43 30 / var(--tw-border-opacity));
 }
 
+.hover\:bg-\[\#053d1d\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(5 61 29 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-gradient-to-b:hover {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -790,6 +817,11 @@ video {
   --tw-gradient-from: #152B1E var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(21 43 30 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.hover\:text-\[\#53c484\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(83 196 132 / var(--tw-text-opacity));
 }
 
 .hover\:text-\[\#cbf0d8\]:hover {
