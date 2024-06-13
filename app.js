@@ -20,6 +20,15 @@ app.get('/home', (req, res) => {
     res.render('pages/home');
 });
 
+app.get('/arunava', (req, res) => {
+    res.redirect("https://www.linkedin.com/in/arunava-chakrabarty-912832259/");
+});
+
+app.get('/:user', (req, res) => {
+    const { user } = req.params;
+    res.render('pages/profile', { user });
+});
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
