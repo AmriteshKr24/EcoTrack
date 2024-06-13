@@ -32,9 +32,11 @@ EcoTrack/<br>
 │       └── userRoutes.js<br>
 ├── views/<br>
 │   ├── partials/<br>
-│   │   ├── head.ejs<br>
-│   │   ├── header.ejs<br>
-│   │   ├── footer.ejs<br>
+│   │   ├── navbar.ejs<br>
+│   │   
+│   ├── layouts/<br>
+│   │   ├── boilerplate.ejs<br>
+│   │   
 │   └── pages/<br>
 │       ├── home.ejs<br>
 │       ├── profile.ejs<br>
