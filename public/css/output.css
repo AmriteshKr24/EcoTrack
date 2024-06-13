@@ -629,6 +629,11 @@ video {
   border-bottom-width: 2px;
 }
 
+.border-\[\#1B1F1D\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(27 31 29 / var(--tw-border-opacity));
+}
+
 .border-\[\#75E69C\] {
   --tw-border-opacity: 1;
   border-color: rgb(117 230 156 / var(--tw-border-opacity));
@@ -743,12 +748,27 @@ video {
   border-color: rgb(21 43 30 / var(--tw-border-opacity));
 }
 
+.hover\:border-\[\#75E69C\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(117 230 156 / var(--tw-border-opacity));
+}
+
 .hover\:bg-gradient-to-b:hover {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
+.hover\:from-\[\#09100C\]:hover {
+  --tw-gradient-from: #09100C var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(9 16 12 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .hover\:from-\[\#152B1E\]:hover {
   --tw-gradient-from: #152B1E var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(21 43 30 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.hover\:to-\[\#1B1F1D\]:hover {
+  --tw-gradient-to: #1B1F1D var(--tw-gradient-to-position);
 }
