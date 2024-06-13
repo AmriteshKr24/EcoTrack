@@ -72,7 +72,7 @@ PATH: ```C:\Users\:name\Documents\GitHub\EcoTrack```
 
 6. Once the server is running, open your web browser and go to:
    ```
-   localhost:3000/
+   localhost:3000/home
    ```
    --This is for home route
    
