@@ -1,10 +1,12 @@
 {
   "devDependencies": {
     "autoprefixer": "^10.4.19",
+    "browser-sync": "^3.0.2",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4"
   },
   "dependencies": {
+    "concurrently": "^8.2.2",
     "ejs": "^3.1.10",
     "ejs-mate": "^4.0.0",
     "express": "^4.19.2",
@@ -14,6 +16,9 @@
     "postcss-cli": "^11.0.0"
   },
   "scripts": {
-    "tailwind": "tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch"
+    "tailwind": "tailwindcss -i ./public/css/input.css -o ./public/css/output.css --watch",
+    "start": "nodemon app.js",
+    "browser-sync": "node bs-config.js",
+    "dev": "concurrently \"npm run tailwind\" \"npm run start\" \"npm run browser-sync\""
   }
 }
