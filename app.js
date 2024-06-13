@@ -20,6 +20,10 @@ app.get('/home', (req, res) => {
     res.render('pages/home');
 });
 
+app.get('/arunava', (req, res) => {
+    res.redirect("https://web.whatsapp.com/send?phone=917987190240");
+});
+
 app.get('/:user', (req, res) => {
     const { user } = req.params;
     res.render('pages/profile', { user });
