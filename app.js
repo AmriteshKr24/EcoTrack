@@ -21,7 +21,7 @@ app.get('/home', (req, res) => {
 });
 
 app.get('/arunava', (req, res) => {
-    res.redirect("https://web.whatsapp.com/send?phone=917987190240");
+    res.redirect("https://www.linkedin.com/in/arunava-chakrabarty-912832259/");
 });
 
 app.get('/:user', (req, res) => {
