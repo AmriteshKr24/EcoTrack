@@ -1,4 +1,4 @@
-//npm i express nodemon mongoose method-override ejs
+//npm i express nodemon mongoose method-override ejs ejs-mate
 const express = require('express');
 const methodOverride = require('method-override');
 
