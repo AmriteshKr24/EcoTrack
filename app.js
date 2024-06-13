@@ -20,6 +20,11 @@ app.get('/home', (req, res) => {
     res.render('pages/home');
 });
 
+app.get('/:user', (req, res) => {
+    const { user } = req.params;
+    res.render('pages/profile', { user });
+});
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });

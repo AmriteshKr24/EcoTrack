@@ -1,0 +1,32 @@
+<% layout('layouts/boilerplate') %>
+
+    <h2 class="mt-5 text-center font-julius text-6xl text-[#75E69C]">Welcome to the Profile Page</h2>
+
+    <div class="flex flex-col items-center mt-5">
+        <img src="https://i.ibb.co/59CFf7M/profile-circle-1023x1024.png" alt="Profile Picture"
+            class="w-1/6 rounded-full border-2 hover:border-[#152b1e] hover:cursor-pointer">
+        <h1 class="mt-4 font-indie text-4xl text-[#75E69C]">
+            <%= user %>
+        </h1>
+        <button
+            class="mt-4 py-2 px-4 bg-[#09100C] text-white font-julius text-xl rounded hover:bg-gradient-to-b hover:from-[#152B1E]">Edit
+            Profile</button>
+    </div>
+
+    <div class="mt-8 w-4/6 min-w-[624px] mx-auto">
+        <h3 class="text-2xl font-julius text-[#75E69C] border-b-2 border-[#75E69C] pb-2">My Posts</h3>
+        <ul class="mt-4 space-y-4">
+            <li class="border-b border-[#75E69C] pb-4">Post 1</li>
+            <li class="border-b border-[#75E69C] pb-4">Post 2</li>
+            <li class="border-b border-[#75E69C] pb-4">Post 3</li>
+        </ul>
+    </div>
+
+    <div class="mt-8 w-4/6 min-w-[624px] mx-auto">
+        <h3 class="text-2xl font-julius text-[#75E69C] border-b-2 border-[#75E69C] pb-2">Badges</h3>
+        <ul class="mt-4 space-y-4">
+            <li class="border-b border-[#75E69C] pb-4">Badge 1</li>
+            <li class="border-b border-[#75E69C] pb-4">Badge 2</li>
+            <li class="border-b border-[#75E69C] pb-4">Badge 3</li>
+        </ul>
+    </div>
