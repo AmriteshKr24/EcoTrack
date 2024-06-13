@@ -24,9 +24,9 @@ app.get('/arunava', (req, res) => {
     res.redirect("https://www.linkedin.com/in/arunava-chakrabarty-912832259/");
 });
 
-app.get('/:user', (req, res) => {
-    const { user } = req.params;
-    res.render('pages/profile', { user });
+app.get('/user/:username', (req, res) => {
+    const { username } = req.params;
+    res.render('pages/profile', { username });
 });
 
 app.listen(3000, () => {
