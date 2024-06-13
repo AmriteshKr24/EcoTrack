@@ -1,21 +1,9 @@
 //npm i express nodemon mongoose method-override ejs
 const express = require('express');
-const mongoose = require('mongoose');
 const methodOverride = require('method-override');
-const ejs = require('ejs');
+
 const path = require('path');
 const ejsMate = require('ejs-mate');
-
-// Connect to MongoDB
-mongoose.set('strictQuery', true);
-mongoose.connect('mongodb://127.0.0.1:27017/EcoTrackDB')
-    .then(() => {
-        console.log("Mongo Connection Open!!!")
-    })
-    .catch(err => {
-        console.log("OH NO ERROR!!!")
-        console.log(err)
-    });
 
 const app = express();
 app.set("views", path.join(__dirname, 'views'));
