@@ -554,11 +554,97 @@ video {
   --tw-contain-style:  ;
 }
 
+.m-6 {
+  margin: 1.5rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
 }
 
-.bg-red-500 {
+.flex {
+  display: flex;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.bg-\[\#09100C\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  background-color: rgb(9 16 12 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#\] {
+  background-color: #;
+}
+
+.bg-\[\#152B1E\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 43 30 / var(--tw-bg-opacity));
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.font-indie {
+  font-family: Indie Flower, cursive, sans-serif;
+}
+
+.font-julius {
+  font-family: Julius Sans One, sans-serif;
+}
+
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-\[\#75E69C\] {
+  --tw-text-opacity: 1;
+  color: rgb(117 230 156 / var(--tw-text-opacity));
+}
+
+.text-blue-900 {
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
+}
+
+@font-face {
+  font-family: 'Julius Sans One';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url(../font/julius.woff2) format('woff2');
+}
+
+.hover\:bg-\[\]:hover {
+  background-color: ;
+}
+
+.hover\:bg-\[\#\]:hover {
+  background-color: #;
+}
+
+.hover\:bg-\[\#152B1E\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 43 30 / var(--tw-bg-opacity));
 }

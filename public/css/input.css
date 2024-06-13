@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Monoton&display=swap');
+
+@font-face {
+    font-family: 'Julius Sans One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../font/julius.woff2) format('woff2');
+}
