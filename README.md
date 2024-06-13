@@ -57,7 +57,7 @@ To run the local server for EcoTrack, follow these steps:
 1. Open your terminal.
 
 2. Navigate to the project directory:
-PATH: ```C:\Users:name\Documents\GitHub\EcoTrack```
+PATH: ```C:\Users\:name\Documents\GitHub\EcoTrack```
 
 3. Install the required dependencies by running the following command:<br>
    ```npm i express nodemon mongoose method-override ejs ejs-mate```  (only once)
