@@ -680,6 +680,10 @@ video {
   text-align: center;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .font-indie {
   font-family: Indie Flower, cursive, sans-serif;
 }
