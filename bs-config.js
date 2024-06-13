@@ -1,11 +1,11 @@
 const browserSync = require("browser-sync").create();
 
 browserSync.init({
-    proxy: "localhost:3000", // Your Node.js app
-    port: 3000,              // Port for BrowserSync
-    host: "localhost",  // Custom hostname (optional)             // Prevent BrowserSync from opening a new tab automatically
+    proxy: "localhost:3000",
+    port: 3000,
+    host: "localhost", 
     ui: {
-        port: 3000          // Port for BrowserSync UI
+        port: 3003
     },
     files: ["public/**/*.*", "views/**/*.*"]
 });
