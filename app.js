@@ -29,6 +29,10 @@ app.get('/user/:username', (req, res) => {
     res.render('pages/profile', { username });
 });
 
+app.get('/leaderboard', (req, res) => {
+    res.render('pages/leaderboard', { title: 'Leaderboard' });
+});
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });

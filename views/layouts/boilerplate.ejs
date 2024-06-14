@@ -8,13 +8,16 @@
     <title>Home</title>
 </head>
 
-<body class="bg-[#001812] pt-[76px]">
+<body class="flex flex-col min-h-screen bg-[#001812] pt-[76px]">
     <%- include('../partials/navbar') %>
-        <%- body %>
 
-            <footer class="text-green-500 text-center bg-[#09100C] bottom-0">
-                <p>&copy; 2024 EcoTrack. All rights reserved.</p>
-            </footer>
+        <div class="flex-grow">
+            <%- body %>
+        </div>
+
+        <footer class="text-green-500 text-center bg-[#09100C] py-4">
+            <p>&copy; 2024 EcoTrack. All rights reserved.</p>
+        </footer>
 </body>
 
 </html>
