@@ -2,7 +2,7 @@ const browserSync = require("browser-sync").create();
 
 browserSync.init({
     proxy: "localhost:3000",
-    port: 3000,
+    port: 3002,
     host: "localhost", 
     ui: {
         port: 3003
