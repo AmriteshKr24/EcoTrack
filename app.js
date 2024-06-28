@@ -1,36 +1,43 @@
-//npm i express nodemon mongoose method-override ejs ejs-mate
+//npm i express nodemon mongoose method-override ejs ejs-mate bcrypt express-session
 const express = require('express');
 const methodOverride = require('method-override');
-
+const mongoose = require('mongoose');
+const session = require('express-session');
 const path = require('path');
 const ejsMate = require('ejs-mate');
 
+const userRoutes = require('./routes/userRoutes');
+const generalRoutes = require('./routes/generalRoutes');
+
 const app = express();
+
+mongoose.connect('mongodb://127.0.0.1:27017/ecoUserDB')
+    .then(() => {
+        console.log("Mongo Connection Open!!!");
+    })
+    .catch(err => {
+        console.log("OH NO ERROR!!!");
+        console.log(err);
+    });
+
 app.set("views", path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.engine('ejs', ejsMate);
-app.use(methodOverride("_method"));
-
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.urlencoded({
-    extended: true
-}))
+app.use(express.urlencoded({ extended: true }));
+app.use(methodOverride("_method"));
+app.use(session({
+    secret: 'badsecretcode',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: false } // Set to true if using HTTPS
+}));
 
-app.get('/home', (req, res) => {
-    res.render('pages/home');
-});
+app.use('/user', userRoutes);
+app.use('/', generalRoutes);
 
-app.get('/arunava', (req, res) => {
-    res.redirect("https://www.linkedin.com/in/arunava-chakrabarty-912832259/");
-});
-
-app.get('/user/:username', (req, res) => {
-    const { username } = req.params;
-    res.render('pages/profile', { username });
-});
-
-app.get('/leaderboard', (req, res) => {
-    res.render('pages/leaderboard', { title: 'Leaderboard' });
+app.use((req, res, next) => {
+    res.status(404).render('pages/404', { username: 404 });
 });
 
 app.listen(3000, () => {
