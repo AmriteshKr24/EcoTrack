@@ -30,7 +30,7 @@ app.use(session({
     secret: 'badsecretcode',
     resave: false,
     saveUninitialized: true,
-    cookie: { secure: false } // Set to true if using HTTPS
+    cookie: { maxAge: 1000 * 60 * 60 * 24 * 7 }
 }));
 
 app.use('/user', userRoutes);
