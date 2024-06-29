@@ -33,6 +33,16 @@ app.use(session({
     cookie: { maxAge: 1000 * 60 * 60 * 24 * 7 }
 }));
 
+const sessionChecker = (req, res, next) => {
+    if (req.session && req.session.user_id) {
+        res.locals.isLoggedIn = true;
+    } else {
+        res.locals.isLoggedIn = false;
+    }
+    next();
+};
+app.use(sessionChecker);
+
 app.use('/user', userRoutes);
 app.use('/', generalRoutes);
 
