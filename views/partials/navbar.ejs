@@ -16,8 +16,12 @@
                 onclick="window.location.href='/leaderboard'">Leaderboard</li>
             <li class="py-6 hover:bg-gradient-to-t hover:from-[#152B1E] hover:cursor-pointer w-1/6 hover:text-[#cbf0d8] hover:rounded-b-3xl"
                 onclick="window.location.href='/user/profile'">Profile</li>
-            <li class="py-6 hover:bg-gradient-to-t text-red-400 hover:from-[#83230bbe] hover:cursor-pointer w-1/6 hover:rounded-b-3xl hover:text-[#f0cbcb]"
-                onclick="window.location.href='/user/logout'">Log Out</li>
+            <form
+                class="py-6 hover:bg-gradient-to-t text-red-400 hover:from-[#83230bbe] hover:cursor-pointer w-1/6 hover:rounded-b-3xl hover:text-[#f0cbcb]"
+                action="/user/logout" method="post">
+                <button>Logout</button>
+            </form>
+
         </ul>
     </nav>
 </header>
