@@ -5,7 +5,7 @@ const User = require('../models/user');
 const router = express.Router();
 
 router.get('/register', (req, res) => {
-    res.render('pages/register'); // Adjusted path
+    res.render('pages/register');
 });
 
 router.post('/register', async (req, res) => {
@@ -27,7 +27,7 @@ router.post('/register', async (req, res) => {
 
 
 router.get('/login', (req, res) => {
-    res.render('pages/login'); // Adjusted path
+    res.render('pages/login');
 });
 
 router.post('/login', async (req, res) => {

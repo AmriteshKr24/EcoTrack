@@ -1,19 +1,27 @@
 <% layout('layouts/boilerplate') %>
 
-    <h1>Login to your account</h1>
-    <form action="/user/login" method="post">
-        <div>
-            <label for="username">Username</label>
-            <input name="username" id="username" type="text"> <br>
+    <div class="min-h-screen flex items-center justify-center bg-[#001812] text-green-300">
+        <div class="max-w-md w-full p-8 bg-green-900 rounded-lg shadow-md">
+            <h1 class="text-3xl font-julius text-[#75E69C] mb-6 text-center">Login to your account</h1>
+            <form action="/user/login" method="post">
+                <div class="mb-4">
+                    <label for="username" class="block text-sm font-julius text-teal-200 mb-2">Username</label>
+                    <input name="username" id="username" type="text"
+                        class="shadow appearance-none border border-[#53c484] rounded w-full py-2 px-3 bg-green-700 text-[#001812] leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="block text-sm font-julius text-teal-200 mb-2">Password</label>
+                    <input name="password" id="password" type="password"
+                        class="shadow appearance-none border border-[#53c484] rounded w-full py-2 px-3 bg-green-700 text-[#001812] leading-tight focus:outline-none focus:shadow-outline">
+                </div>
+                <div class="flex items-center justify-between">
+                    <button type="submit"
+                        class="bg-[#53c484] hover:bg-[#053d1d] text-[#152b1e] hover:text-[#53c484] font-julius font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Login</button>
+                </div>
+                <div class="mt-6 text-center">
+                    <h3 class="text-sm font-julius text-teal-200">New User?</h3>
+                    <a href="/user/register" class="text-[#53c484] hover:text-teal-200">Register</a>
+                </div>
+            </form>
         </div>
-        <div>
-            <label for="password">Password</label>
-            <input name="password" id="password" type="password">
-        </div>
-        <br>
-        <button>Login</button>
-        <div>
-            <h3>New User?</h3>
-            <a href="/user/register">Register</a>
-        </div>
-    </form>
+    </div>
